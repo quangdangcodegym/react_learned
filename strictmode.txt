@@ -1,0 +1,17 @@
+"use strict"
+Strict mode:
++ Khai báo chế độ nghiêm ngặt global đầu file: "use strict" Trước nó phải không có đoạn code nào cả
++ Khai báo strict ở phạm vi <script>"use strict"...</script>
++ Khai báo strict ở phạm vi trong hàm 
+	function yourfunction(){
+		"use strict"
+	}
+
+"use strict"
+const student = Object.freeze(
+	{
+		fullName: "Nguyen Van A"
+	}
+)
+
+## Báo lỗi khi gán lại giá trị cho thuộc tính có wriable:false
