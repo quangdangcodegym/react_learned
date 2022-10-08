@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@atlaskit/button": "^16.3.7",
+    "@atlaskit/icon": "^21.10.7",
+    "@atlaskit/textfield": "^5.2.0"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section className="create-contact">
+        <div className="container">
+            <div className="row">
+                <div className="col-4">
+                    <form>
+                        <div className="mb-2"><input type="text" className="form-control" placeholder="Name" name="name"
+                                required /></div>
+                        <div className="mb-2"><input type="tel" className="form-control" placeholder="Mobile"
+                                name="mobile" required /></div>
+                        <div className="mb-2"><input type="email" className="form-control" placeholder="Email"
+                                name="email" required /></div>
+                        <div className="mb-2"><input type="text" className="form-control" placeholder="Company"
+                                name="company" required /></div>
+                        <div className="mb-2"><input type="text" className="form-control" placeholder="Title"
+                                name="title" required /></div>
+                        <div className="mb-2"><select className="form-control" name="groupId">
+                                <option value={0} disabled>Select a Group</option>
+                                <option value={1}>Friends</option>
+                                <option value={2}>Company</option>
+                                <option value={3}>Football Club</option>
+                                <option value={4}>Gym Club</option>
+                                <option value={5}>University</option>
+                            </select></div>
+                        <div className="mb-3"><button type="submit" className="btn btn-success me-2">Create</button><a
+                                className="btn btn-dark" href="/cg-contact/contact/list">Close</a></div>
+                    </form>
+                </div>
+                <div className="col-4">
+                    <div className="d-flex flex-column align-items-center avatar"><img className="avatar-lg"
+                            src="/cg-contact/static/media/no-avatar.58199aa0f08bad74a015.png" alt="" /><span
+                            className="select-avatar">Select an Avatar</span><input className="form-control d-none"
+                            accept="image/*" type="file" id="fileAvatar" /><button
+                            className="btn btn-primary mt-2">Upload</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

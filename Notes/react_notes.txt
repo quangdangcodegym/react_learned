@@ -1,0 +1,44 @@
+Install component and resource
+
+npm install bootstrap
+npm install axios
+npm install react-router-dom
+npm i @reduxjs/toolkit
+npm i install react-redux
+
+Xử lý khi onInput change
+const [contactState, setContactState] = useState({
+        loading: false,
+        contact: {
+            name: '',
+            photoUrl: '',
+            mobile: '',
+            email: '',
+            company: '',
+            title: '',
+            groupId: 0
+        },
+        group: [],
+        errorMessage: ''
+    })
+<input type="text" className="form-control" onChange={handleInputValue} placeholder="Title" />
+const handleInputValue = (event)=>{
+        setContactState({
+            ...contactState,
+            contact: {
+                ...contactState.contact,
+                [event.target.name] : event.target.value
+            }
+        })
+    }
+
+
+Đưa thông tin object vào object
+export const addTodo = (data)=>{
+    return {
+        type: 'todoList/addTodo',
+        // data là 1 object
+        // payload: {id: 4,name: 'Learn C#', completed: false, priority: 'High'}
+        payload: data
+    }
+}

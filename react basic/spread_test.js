@@ -34,7 +34,7 @@
 
     var array = ['Javascript', 'PHP', 'Rubby'];
 
-    function logger(a,b,c){
-        console.log(a,b,c);
+    function logger(a,b){
+        console.log(a,b);   //Javascript PHP
     }
     logger(...array)

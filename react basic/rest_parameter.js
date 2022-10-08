@@ -1,15 +1,27 @@
 //=====> Toán tử rest
+const obj =     {
+        name:'Javascript',
+        price: 1000,
+        description: 'Descripton ...',
+        address: 'hue'
+    }
+
+    const {name, price} = obj;
+
+    console.log(name);
+
 /**
-    // Lấy phần còn lại
+ * 
     function logger(...params){
-        console.log(params);
+        console.log(params); // (5) [1, 2, 3, 4, 5]
     }
 
     logger(1,2,3,4,5);
+    // Lấy phần còn lại
 
     // Lấy phần còn lại sau tham số a, b 
     function logger1(a, b,...params){
-        console.log(params); => [3,4,5]
+        console.log(params); => (3) [3,4,5]
     }
 
     logger1(1,2,3,4,5);
