@@ -1,0 +1,6 @@
+.owl-theme .owl-nav [class*='owl-'] {
+	margin: 0 !important;
+	padding: 0 !important;
+	/* padding: 0;
+	margin: 0; */
+}
